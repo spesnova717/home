@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<direct>
+  <chain table="filter" ipv="ipv4" chain="LOG_PINGDEATH"/>
+  <rule priority="0" table="filter" ipv="ipv4" chain="INPUT">-m set --match-set BLACKLIST src -j DROP</rule>
+  <rule priority="0" table="filter" ipv="ipv4" chain="INPUT">-i lo -j ACCEPT</rule>
+  <rule priority="1" table="filter" ipv="ipv4" chain="INPUT">-p icmp --icmp-type echo-request -j LOG_PINGDEATH</rule>
+  <rule priority="0" table="filter" ipv="ipv4" chain="INPUT">-p icmp --icmp-type 8 -m length --length :85 -m limit --limit 1/s --limit-burst 4 -j ACCEPT</rule>
+  <rule priority="0" table="filter" ipv="ipv4" chain="INPUT">-p tcp -m tcp --tcp-flags RST RST -m limit --limit 2/second --limit-burst 2 -j ACCEPT</rule>
+  <rule priority="0" table="filter" ipv="ipv4" chain="INPUT">-d 255.255.255.255 -j DROP</rule>
+  <rule priority="0" table="filter" ipv="ipv4" chain="INPUT">-d 224.0.0.1 -j DROP</rule>
+  <rule priority="0" table="filter" ipv="ipv4" chain="INPUT">-p tcp --dport 113 -j REJECT --reject-with tcp-reset</rule>
+  <rule priority="1" table="filter" ipv="ipv4" chain="INPUT">-p tcp --dport 22 -m set --match-set WHITELIST src -j ACCEPT</rule>
+  <rule priority="1" table="filter" ipv="ipv4" chain="INPUT">-p tcp --dport 80 -m set --match-set WHITELIST src -j ACCEPT</rule>
+  <rule priority="1" table="filter" ipv="ipv4" chain="INPUT">-p tcp --dport 443 -m set --match-set WHITELIST src -j ACCEPT</rule>
+  <rule priority="1" table="filter" ipv="ipv4" chain="INPUT">-p tcp --dport 3389 -m set --match-set WHITELIST src -j ACCEPT</rule>
+  <rule priority="1" table="filter" ipv="ipv4" chain="INPUT">-p tcp --dport 22429 -m set --match-set WHITELIST src -j ACCEPT</rule>
+  <rule priority="1" table="filter" ipv="ipv4" chain="INPUT">-p udp --dport 137 -m set --match-set WHITELIST src -j ACCEPT</rule>
+  <rule priority="1" table="filter" ipv="ipv4" chain="INPUT">-p udp --dport 138 -m set --match-set WHITELIST src -j ACCEPT</rule>
+  <rule priority="1" table="filter" ipv="ipv4" chain="INPUT">-p tcp --dport 139 -m set --match-set WHITELIST src -j ACCEPT</rule>
+  <rule priority="1" table="filter" ipv="ipv4" chain="INPUT">-p tcp --dport 445 -m set --match-set WHITELIST src -j ACCEPT</rule>
+  <rule priority="2" table="filter" ipv="ipv4" chain="INPUT">-m limit --limit 1/s -j LOG --log-prefix '[INPUT] : '</rule>
+  <rule priority="2" table="filter" ipv="ipv4" chain="INPUT">-j DROP</rule>
+  <rule priority="0" table="filter" ipv="ipv4" chain="INPUT">-p tcp -m multiport --dports ssh -m set --match-set fail2ban-sshd src -j DROP</rule>
+  <rule priority="1" table="filter" ipv="ipv4" chain="LOG_PINGDEATH">-m limit --limit 1/s --limit-burst 4 -j ACCEPT</rule>
+  <rule priority="1" table="filter" ipv="ipv4" chain="LOG_PINGDEATH">-j LOG --log-prefix '[PINGDEATH] : ' --log-level 7</rule>
+  <rule priority="1" table="filter" ipv="ipv4" chain="LOG_PINGDEATH">-j DROP</rule>
+  <rule priority="1" table="filter" ipv="ipv4" chain="FORWARD">-m limit --limit 1/s -j LOG --log-prefix '[FORWARD] : '</rule>
+  <rule priority="1" table="filter" ipv="ipv4" chain="FORWARD">-j DROP</rule>
+  <rule priority="0" table="filter" ipv="ipv4" chain="OUTPUT">-j ACCEPT</rule>
+</direct>
