@@ -1,0 +1,2 @@
+#define DRV_VERSION "1.1.0"
+#define DRV_RELDATE "2010-01-27"

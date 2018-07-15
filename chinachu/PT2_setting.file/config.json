@@ -1,0 +1,54 @@
+{
+  "uid": "chinachu",
+  "gid": "video",
+  "mirakurunPath": "http+unix://%2Fvar%2Frun%2Fmirakurun.sock/",
+
+  "recordedDir" : "/media",
+
+  "vaapiEnabled": false,
+  "vaapiDevice": "/dev/dri/renderD128",
+
+  "excludeServices": [
+    3273701416,
+    3232728088,
+    3273901183,
+    3274201456,
+    3239123992,
+    3239123993,
+    3273601408
+  ],
+
+  "serviceOrder": [
+    3273601024,
+    3273601025,
+    3273701032,
+    3273701033,
+    3273701034
+  ],
+
+  "wuiUsers": [
+    "chinachu:yoshikawa"
+  ],
+  "wuiAllowCountries": ["JP"],
+
+  "wuiPort": null,
+  "wuiOpenHost": "0.0.0.0",
+  "wuiTlsKeyPath": null,
+  "wuiTlsCertPath": null,
+  "wuiTlsRequestCert": false,
+  "wuiTlsRejectUnauthorized": true,
+  "wuiTlsCaPath": null,
+  "wuiOpenServer": true,
+  "wuiOpenPort": port number,
+  "wuiXFF": false,
+  "wuiDLNAServerEnabled": false,
+  "wuiMdnsAdvertisement": true,
+
+  "recordedFormat": "[<date:yymmdd-HHMM>][<type><channel>][<channel-name>]<title>.m2ts",
+  "storageLowSpaceThresholdMB": 3000,
+  "storageLowSpaceAction": "remove",
+  "storageLowSpaceNotifyTo": null,
+  "storageLowSpaceCommand": "",
+  "operRecCmdSpan": 1000,
+  "schedulerEpgRecordTime": 180
+}

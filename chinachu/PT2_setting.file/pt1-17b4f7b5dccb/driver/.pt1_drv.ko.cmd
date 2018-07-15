@@ -1,0 +1,1 @@
+cmd_/root/src/pt1-17b4f7b5dccb/driver/pt1_drv.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /root/src/pt1-17b4f7b5dccb/driver/pt1_drv.ko /root/src/pt1-17b4f7b5dccb/driver/pt1_drv.o /root/src/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o
