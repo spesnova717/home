@@ -1,14 +1,16 @@
-cmd_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o := gcc -Wp,-MD,/root/src/pt1-17b4f7b5dccb/driver/.pt1_tuner.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include -I./arch/x86/include -Iarch/x86/include/generated  -Iinclude -I./arch/x86/include/uapi -Iarch/x86/include/generated/uapi -I./include/uapi -Iinclude/generated/uapi -include ./include/linux/kconfig.h -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -std=gnu89 -O2 -m64 -mno-mmx -mno-sse -mpreferred-stack-boundary=3 -mtune=generic -mno-red-zone -mcmodel=kernel -funit-at-a-time -maccumulate-outgoing-args -Wframe-larger-than=2048 -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_FXSAVEQ=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_AVX512=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -mindirect-branch=thunk-extern -mindirect-branch-register -DRETPOLINE -Wframe-larger-than=2048 -fstack-protector-strong -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -g -pg -mfentry -DCC_USING_FENTRY -fno-inline-functions-called-once -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO -Wformat=2  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(pt1_tuner)"  -D"KBUILD_MODNAME=KBUILD_STR(pt1_drv)" -c -o /root/src/pt1-17b4f7b5dccb/driver/.tmp_pt1_tuner.o /root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.c
+cmd_/root/home/chinachu/PT2_setting.file/pt1-17b4f7b5dccb/driver/pt1_tuner.o := gcc -Wp,-MD,/root/home/chinachu/PT2_setting.file/pt1-17b4f7b5dccb/driver/.pt1_tuner.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include -I./arch/x86/include -Iarch/x86/include/generated  -Iinclude -I./arch/x86/include/uapi -Iarch/x86/include/generated/uapi -I./include/uapi -Iinclude/generated/uapi -include ./include/linux/kconfig.h -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -std=gnu89 -O2 -m64 -mno-mmx -mno-sse -mpreferred-stack-boundary=3 -mtune=generic -mno-red-zone -mcmodel=kernel -funit-at-a-time -maccumulate-outgoing-args -Wframe-larger-than=2048 -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_FXSAVEQ=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_AVX512=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -mindirect-branch=thunk-extern -mindirect-branch-register -DRETPOLINE -Wframe-larger-than=2048 -fstack-protector-strong -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -g -pg -mfentry -DCC_USING_FENTRY -fno-inline-functions-called-once -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO -Wformat=2  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(pt1_tuner)"  -D"KBUILD_MODNAME=KBUILD_STR(pt1_drv)" -c -o /root/home/chinachu/PT2_setting.file/pt1-17b4f7b5dccb/driver/.tmp_pt1_tuner.o /root/home/chinachu/PT2_setting.file/pt1-17b4f7b5dccb/driver/pt1_tuner.c
 
-source_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o := /root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.c
+source_/root/home/chinachu/PT2_setting.file/pt1-17b4f7b5dccb/driver/pt1_tuner.o := /root/home/chinachu/PT2_setting.file/pt1-17b4f7b5dccb/driver/pt1_tuner.c
 
-deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o := \
+deps_/root/home/chinachu/PT2_setting.file/pt1-17b4f7b5dccb/driver/pt1_tuner.o := \
   include/linux/module.h \
     $(wildcard include/config/sysfs.h) \
     $(wildcard include/config/modules.h) \
     $(wildcard include/config/livepatch.h) \
     $(wildcard include/config/ftrace/mcount/record.h) \
-    $(wildcard include/config/s390.h) \
+    $(wildcard include/config/x86/64.h) \
+    $(wildcard include/config/ppc64.h) \
+    $(wildcard include/config/dynamic/ftrace.h) \
     $(wildcard include/config/unused/symbols.h) \
     $(wildcard include/config/module/sig.h) \
     $(wildcard include/config/generic/bug.h) \
@@ -43,6 +45,7 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o := \
     $(wildcard include/config/sparse/rcu/pointer.h) \
     $(wildcard include/config/trace/branch/profiling.h) \
     $(wildcard include/config/profile/all/branches.h) \
+    $(wildcard include/config/kasan.h) \
     $(wildcard include/config/enable/must/check.h) \
     $(wildcard include/config/enable/warn/deprecated.h) \
     $(wildcard include/config/kprobes.h) \
@@ -78,7 +81,6 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o := \
     $(wildcard include/config/have/underscore/symbol/prefix.h) \
     $(wildcard include/config/modversions.h) \
   arch/x86/include/asm/linkage.h \
-    $(wildcard include/config/x86/64.h) \
     $(wildcard include/config/x86/alignment/16.h) \
   include/linux/bitops.h \
   arch/x86/include/asm/bitops.h \
@@ -173,6 +175,7 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o := \
   arch/x86/include/asm/nops.h \
     $(wildcard include/config/mk7.h) \
     $(wildcard include/config/x86/p6/nop.h) \
+  include/asm-generic/barrier.h \
   include/asm-generic/bitops/find.h \
     $(wildcard include/config/generic/find/first/bit.h) \
   include/asm-generic/bitops/sched.h \
@@ -186,6 +189,7 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o := \
     $(wildcard include/config/matom.h) \
   arch/x86/include/asm/disabled-features.h \
     $(wildcard include/config/x86/intel/mpx.h) \
+    $(wildcard include/config/x86/intel/umip.h) \
   include/asm-generic/bitops/const_hweight.h \
   include/asm-generic/bitops/le.h \
   arch/x86/include/uapi/asm/byteorder.h \
@@ -209,11 +213,11 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o := \
   include/uapi/linux/kernel.h \
   include/uapi/linux/sysinfo.h \
   include/linux/seqlock.h \
+    $(wildcard include/config/debug/lock/alloc.h) \
   include/linux/spinlock.h \
     $(wildcard include/config/debug/spinlock.h) \
     $(wildcard include/config/generic/lockbreak.h) \
     $(wildcard include/config/preempt.h) \
-    $(wildcard include/config/debug/lock/alloc.h) \
     $(wildcard include/config/queued/rwlocks.h) \
   include/linux/preempt.h \
     $(wildcard include/config/debug/preempt.h) \
@@ -224,6 +228,8 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o := \
   include/linux/thread_info.h \
     $(wildcard include/config/compat.h) \
     $(wildcard include/config/debug/stack/usage.h) \
+    $(wildcard include/config/have/arch/within/stack/frames.h) \
+    $(wildcard include/config/hardened/usercopy.h) \
   include/linux/bug.h \
   arch/x86/include/asm/bug.h \
     $(wildcard include/config/bug.h) \
@@ -231,6 +237,7 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o := \
   include/asm-generic/bug.h \
     $(wildcard include/config/generic/bug/relative/pointers.h) \
   arch/x86/include/asm/thread_info.h \
+    $(wildcard include/config/frame/pointer.h) \
     $(wildcard include/config/ia32/emulation.h) \
   arch/x86/include/asm/page.h \
   arch/x86/include/asm/page_64.h \
@@ -260,6 +267,7 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o := \
     $(wildcard include/config/base/small.h) \
   include/linux/percpu-defs.h \
     $(wildcard include/config/debug/force/weak/per/cpu.h) \
+    $(wildcard include/config/virtualization.h) \
   arch/x86/include/asm/msr.h \
   arch/x86/include/asm/msr-index.h \
     $(wildcard include/config/control.h) \
@@ -292,7 +300,6 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o := \
   arch/x86/include/uapi/asm/msr.h \
   arch/x86/include/asm/paravirt.h \
   arch/x86/include/asm/frame.h \
-    $(wildcard include/config/frame/pointer.h) \
   arch/x86/include/asm/special_insns.h \
   include/linux/personality.h \
   include/uapi/linux/personality.h \
@@ -306,6 +313,10 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o := \
     $(wildcard include/config/irqsoff/tracer.h) \
     $(wildcard include/config/trace/irqflags/support.h) \
   arch/x86/include/asm/irqflags.h \
+  include/linux/static_key.h \
+  arch/x86/include/asm/nospec-branch.h \
+    $(wildcard include/config/retpoline.h) \
+  arch/x86/include/asm/alternative-asm.h \
   include/uapi/linux/magic.h \
   include/linux/atomic.h \
     $(wildcard include/config/arch/has/atomic/or.h) \
@@ -317,6 +328,7 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o := \
   include/asm-generic/atomic-long.h \
   include/linux/bottom_half.h \
   include/linux/preempt_mask.h \
+    $(wildcard include/config/s390.h) \
   include/linux/spinlock_types.h \
   include/linux/lockdep.h \
     $(wildcard include/config/lockdep.h) \
@@ -449,6 +461,7 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o := \
   include/linux/timer.h \
     $(wildcard include/config/timer/stats.h) \
     $(wildcard include/config/debug/objects/timers.h) \
+    $(wildcard include/config/no/hz/common.h) \
   include/linux/ktime.h \
     $(wildcard include/config/ktime/scalar.h) \
   include/linux/jiffies.h \
@@ -463,6 +476,10 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o := \
   arch/x86/include/asm/tsc.h \
     $(wildcard include/config/x86/tsc.h) \
   include/linux/timekeeping.h \
+  include/linux/sysctl.h \
+    $(wildcard include/config/sysctl.h) \
+  include/linux/rbtree.h \
+  include/uapi/linux/sysctl.h \
   arch/x86/include/asm/mmzone.h \
   arch/x86/include/asm/mmzone_64.h \
   arch/x86/include/asm/smp.h \
@@ -506,6 +523,7 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o := \
     $(wildcard include/config/acpi/sleep.h) \
   arch/x86/include/asm/io.h \
     $(wildcard include/config/mtrr.h) \
+    $(wildcard include/config/x86/pat.h) \
   include/asm-generic/iomap.h \
     $(wildcard include/config/has/ioport.h) \
     $(wildcard include/config/pci.h) \
@@ -515,7 +533,6 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o := \
     $(wildcard include/config/generic/pci/iomap.h) \
   include/linux/vmalloc.h \
     $(wildcard include/config/mmu.h) \
-  include/linux/rbtree.h \
   include/xen/xen.h \
     $(wildcard include/config/xen/dom0.h) \
   arch/x86/include/asm/pvclock.h \
@@ -543,9 +560,6 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o := \
   include/linux/percpu.h \
     $(wildcard include/config/need/per/cpu/embed/first/chunk.h) \
     $(wildcard include/config/need/per/cpu/page/first/chunk.h) \
-  include/linux/sysctl.h \
-    $(wildcard include/config/sysctl.h) \
-  include/uapi/linux/sysctl.h \
   include/linux/elf.h \
   arch/x86/include/asm/elf.h \
   arch/x86/include/asm/user.h \
@@ -564,9 +578,7 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o := \
   include/linux/moduleparam.h \
     $(wildcard include/config/alpha.h) \
     $(wildcard include/config/ia64.h) \
-    $(wildcard include/config/ppc64.h) \
   include/linux/tracepoint.h \
-  include/linux/static_key.h \
   arch/x86/include/asm/module.h \
     $(wildcard include/config/m586.h) \
     $(wildcard include/config/m586tsc.h) \
@@ -630,30 +642,76 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o := \
     $(wildcard include/config/intel/iommu.h) \
     $(wildcard include/config/amd/iommu.h) \
   include/linux/pm_wakeup.h \
+  include/linux/interrupt.h \
+    $(wildcard include/config/generic/hardirqs.h) \
+    $(wildcard include/config/irq/forced/threading.h) \
+    $(wildcard include/config/generic/irq/probe.h) \
+  include/linux/irqreturn.h \
+  include/linux/irqnr.h \
+  include/uapi/linux/irqnr.h \
+  include/linux/hardirq.h \
+  include/linux/ftrace_irq.h \
+    $(wildcard include/config/ftrace/nmi/enter.h) \
+    $(wildcard include/config/hwlat/tracer.h) \
+  include/linux/vtime.h \
+    $(wildcard include/config/virt/cpu/accounting/native.h) \
+    $(wildcard include/config/virt/cpu/accounting/gen.h) \
+    $(wildcard include/config/virt/cpu/accounting.h) \
+    $(wildcard include/config/irq/time/accounting.h) \
+  include/linux/context_tracking_state.h \
+  arch/x86/include/asm/hardirq.h \
+    $(wildcard include/config/x86/thermal/vector.h) \
+    $(wildcard include/config/x86/mce/threshold.h) \
+    $(wildcard include/config/x86/mce/amd.h) \
+  include/linux/irq.h \
+    $(wildcard include/config/generic/pending/irq.h) \
+    $(wildcard include/config/hardirqs/sw/resend.h) \
+    $(wildcard include/config/generic/irq/legacy/alloc/hwirq.h) \
+  arch/x86/include/asm/irq.h \
+  arch/x86/include/asm/irq_regs.h \
+  include/linux/irqdesc.h \
+    $(wildcard include/config/irq/preflow/fasteoi.h) \
+    $(wildcard include/config/sparse/irq.h) \
+  arch/x86/include/asm/hw_irq.h \
+    $(wildcard include/config/irq/remap.h) \
+  include/linux/profile.h \
+    $(wildcard include/config/profiling.h) \
+  arch/x86/include/asm/sections.h \
+    $(wildcard include/config/debug/rodata.h) \
+  include/asm-generic/sections.h \
+  arch/x86/include/asm/uaccess.h \
+    $(wildcard include/config/x86/intel/usercopy.h) \
+  arch/x86/include/asm/smap.h \
+    $(wildcard include/config/x86/smap.h) \
+  arch/x86/include/asm/uaccess_64.h \
+  include/linux/hrtimer.h \
+    $(wildcard include/config/high/res/timers.h) \
+    $(wildcard include/config/timerfd.h) \
+  include/linux/timerqueue.h \
   include/linux/io.h \
     $(wildcard include/config/have/arch/huge/vmap.h) \
   include/linux/resource_ext.h \
   include/linux/slab.h \
     $(wildcard include/config/slab/debug.h) \
     $(wildcard include/config/failslab.h) \
+    $(wildcard include/config/memcg/kmem.h) \
+    $(wildcard include/config/have/hardened/usercopy/allocator.h) \
     $(wildcard include/config/slob.h) \
     $(wildcard include/config/slab.h) \
     $(wildcard include/config/slub.h) \
     $(wildcard include/config/debug/slab.h) \
+  include/linux/overflow.h \
   include/linux/slub_def.h \
     $(wildcard include/config/slub/stats.h) \
-    $(wildcard include/config/memcg/kmem.h) \
     $(wildcard include/config/slub/debug.h) \
   include/linux/kmemleak.h \
     $(wildcard include/config/debug/kmemleak.h) \
   include/uapi/linux/pci.h \
   include/uapi/linux/pci_regs.h \
   include/linux/pci_ids.h \
-  include/linux/pci-dma.h \
   include/linux/dmapool.h \
   arch/x86/include/asm/scatterlist.h \
   include/asm-generic/scatterlist.h \
-    $(wildcard include/config/debug/sg.h) \
     $(wildcard include/config/need/sg/dma/length.h) \
   arch/x86/include/asm/pci.h \
     $(wildcard include/config/vmd.h) \
@@ -666,8 +724,8 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o := \
     $(wildcard include/config/metag.h) \
     $(wildcard include/config/stack/growsup.h) \
     $(wildcard include/config/transparent/hugepage.h) \
-    $(wildcard include/config/ksm.h) \
     $(wildcard include/config/shmem.h) \
+    $(wildcard include/config/fs/dax.h) \
     $(wildcard include/config/debug/vm/rb.h) \
     $(wildcard include/config/debug/pagealloc.h) \
     $(wildcard include/config/hugetlbfs.h) \
@@ -684,6 +742,8 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o := \
     $(wildcard include/config/mmu/notifier.h) \
     $(wildcard include/config/spapr/tce/iommu.h) \
     $(wildcard include/config/hmm.h) \
+    $(wildcard include/config/membarrier.h) \
+    $(wildcard include/config/arch/want/batched/unmap/tlb/flush.h) \
   include/linux/auxvec.h \
   include/uapi/linux/auxvec.h \
   include/linux/uprobes.h \
@@ -703,9 +763,16 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o := \
     $(wildcard include/config/pageflags/extended.h) \
     $(wildcard include/config/arch/uses/pg/uncached.h) \
     $(wildcard include/config/memory/failure.h) \
+    $(wildcard include/config/idle/page/tracking.h) \
     $(wildcard include/config/swap.h) \
+    $(wildcard include/config/ksm.h) \
   include/linux/page_ext.h \
+    $(wildcard include/config/page/owner.h) \
     $(wildcard include/config/page/extension.h) \
+  include/linux/stacktrace.h \
+    $(wildcard include/config/stacktrace.h) \
+    $(wildcard include/config/user/stacktrace/support.h) \
+  include/linux/memremap.h \
   arch/x86/include/asm/pgtable.h \
     $(wildcard include/config/have/arch/transparent/hugepage/pud.h) \
   arch/x86/include/asm/pgtable_64.h \
@@ -713,6 +780,7 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o := \
   arch/x86/include/asm/kaiser.h \
   arch/x86/include/asm/mm_track.h \
     $(wildcard include/config/track/dirty/pages.h) \
+  arch/x86/include/asm/pgtable-invert.h \
   include/asm-generic/pgtable.h \
     $(wildcard include/config/have/arch/soft/dirty.h) \
     $(wildcard include/config/arch/uses/numa/prot/none.h) \
@@ -720,13 +788,11 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o := \
   include/linux/fs.h \
     $(wildcard include/config/fs/posix/acl.h) \
     $(wildcard include/config/security.h) \
+    $(wildcard include/config/ima.h) \
     $(wildcard include/config/quota.h) \
     $(wildcard include/config/fsnotify.h) \
-    $(wildcard include/config/ima.h) \
     $(wildcard include/config/epoll.h) \
-    $(wildcard include/config/debug/writecount.h) \
     $(wildcard include/config/file/locking.h) \
-    $(wildcard include/config/fs/dax.h) \
     $(wildcard include/config/mandatory/file/locking.h) \
     $(wildcard include/config/block.h) \
     $(wildcard include/config/migration.h) \
@@ -786,6 +852,7 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o := \
   include/linux/dma-debug.h \
   include/linux/dma-direction.h \
   include/linux/scatterlist.h \
+    $(wildcard include/config/debug/sg.h) \
     $(wildcard include/config/sg/pool.h) \
   include/linux/kmemcheck.h \
   include/asm-generic/dma-coherent.h \
@@ -798,59 +865,13 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o := \
   include/linux/swiotlb.h \
   include/linux/dma-contiguous.h \
     $(wildcard include/config/cma/areas.h) \
-  include/linux/interrupt.h \
-    $(wildcard include/config/generic/hardirqs.h) \
-    $(wildcard include/config/irq/forced/threading.h) \
-    $(wildcard include/config/generic/irq/probe.h) \
-  include/linux/irqreturn.h \
-  include/linux/irqnr.h \
-  include/uapi/linux/irqnr.h \
-  include/linux/hardirq.h \
-  include/linux/ftrace_irq.h \
-    $(wildcard include/config/ftrace/nmi/enter.h) \
-    $(wildcard include/config/hwlat/tracer.h) \
-  include/linux/vtime.h \
-    $(wildcard include/config/virt/cpu/accounting/native.h) \
-    $(wildcard include/config/virt/cpu/accounting/gen.h) \
-    $(wildcard include/config/virt/cpu/accounting.h) \
-    $(wildcard include/config/irq/time/accounting.h) \
-  include/linux/context_tracking_state.h \
-  arch/x86/include/asm/hardirq.h \
-    $(wildcard include/config/x86/thermal/vector.h) \
-    $(wildcard include/config/x86/mce/threshold.h) \
-    $(wildcard include/config/x86/mce/amd.h) \
-  include/linux/irq.h \
-    $(wildcard include/config/generic/pending/irq.h) \
-    $(wildcard include/config/hardirqs/sw/resend.h) \
-    $(wildcard include/config/generic/irq/legacy/alloc/hwirq.h) \
-  arch/x86/include/asm/irq.h \
-  arch/x86/include/asm/irq_regs.h \
-  include/linux/irqdesc.h \
-    $(wildcard include/config/irq/preflow/fasteoi.h) \
-    $(wildcard include/config/sparse/irq.h) \
-  arch/x86/include/asm/hw_irq.h \
-    $(wildcard include/config/irq/remap.h) \
-  include/linux/profile.h \
-    $(wildcard include/config/profiling.h) \
-  arch/x86/include/asm/sections.h \
-    $(wildcard include/config/debug/rodata.h) \
-  include/asm-generic/sections.h \
-  arch/x86/include/asm/uaccess.h \
-    $(wildcard include/config/x86/intel/usercopy.h) \
-  arch/x86/include/asm/smap.h \
-    $(wildcard include/config/x86/smap.h) \
-  arch/x86/include/asm/uaccess_64.h \
-  include/linux/hrtimer.h \
-    $(wildcard include/config/high/res/timers.h) \
-    $(wildcard include/config/timerfd.h) \
-  include/linux/timerqueue.h \
   include/generated/uapi/linux/version.h \
-  /root/src/pt1-17b4f7b5dccb/driver/pt1_com.h \
-  /root/src/pt1-17b4f7b5dccb/driver/pt1_pci.h \
-  /root/src/pt1-17b4f7b5dccb/driver/pt1_i2c.h \
-  /root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.h \
-  /root/src/pt1-17b4f7b5dccb/driver/pt1_tuner_data.h \
+  /root/home/chinachu/PT2_setting.file/pt1-17b4f7b5dccb/driver/pt1_com.h \
+  /root/home/chinachu/PT2_setting.file/pt1-17b4f7b5dccb/driver/pt1_pci.h \
+  /root/home/chinachu/PT2_setting.file/pt1-17b4f7b5dccb/driver/pt1_i2c.h \
+  /root/home/chinachu/PT2_setting.file/pt1-17b4f7b5dccb/driver/pt1_tuner.h \
+  /root/home/chinachu/PT2_setting.file/pt1-17b4f7b5dccb/driver/pt1_tuner_data.h \
 
-/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o: $(deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o)
+/root/home/chinachu/PT2_setting.file/pt1-17b4f7b5dccb/driver/pt1_tuner.o: $(deps_/root/home/chinachu/PT2_setting.file/pt1-17b4f7b5dccb/driver/pt1_tuner.o)
 
-$(deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_tuner.o):
+$(deps_/root/home/chinachu/PT2_setting.file/pt1-17b4f7b5dccb/driver/pt1_tuner.o):

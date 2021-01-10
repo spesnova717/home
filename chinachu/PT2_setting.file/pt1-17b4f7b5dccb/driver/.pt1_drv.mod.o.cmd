@@ -1,15 +1,18 @@
-cmd_/root/src/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o := gcc -Wp,-MD,/root/src/pt1-17b4f7b5dccb/driver/.pt1_drv.mod.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include -I./arch/x86/include -Iarch/x86/include/generated  -Iinclude -I./arch/x86/include/uapi -Iarch/x86/include/generated/uapi -I./include/uapi -Iinclude/generated/uapi -include ./include/linux/kconfig.h -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -std=gnu89 -O2 -m64 -mno-mmx -mno-sse -mpreferred-stack-boundary=3 -mtune=generic -mno-red-zone -mcmodel=kernel -funit-at-a-time -maccumulate-outgoing-args -Wframe-larger-than=2048 -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_FXSAVEQ=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_AVX512=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -mindirect-branch=thunk-extern -mindirect-branch-register -DRETPOLINE -Wframe-larger-than=2048 -fstack-protector-strong -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -g -pg -mfentry -DCC_USING_FENTRY -fno-inline-functions-called-once -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO -Wformat=2  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(pt1_drv.mod)"  -D"KBUILD_MODNAME=KBUILD_STR(pt1_drv)" -DMODULE  -c -o /root/src/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o /root/src/pt1-17b4f7b5dccb/driver/pt1_drv.mod.c
+cmd_/root/home/chinachu/PT2_setting.file/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o := gcc -Wp,-MD,/root/home/chinachu/PT2_setting.file/pt1-17b4f7b5dccb/driver/.pt1_drv.mod.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include -I./arch/x86/include -Iarch/x86/include/generated  -Iinclude -I./arch/x86/include/uapi -Iarch/x86/include/generated/uapi -I./include/uapi -Iinclude/generated/uapi -include ./include/linux/kconfig.h -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -std=gnu89 -O2 -m64 -mno-mmx -mno-sse -mpreferred-stack-boundary=3 -mtune=generic -mno-red-zone -mcmodel=kernel -funit-at-a-time -maccumulate-outgoing-args -Wframe-larger-than=2048 -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_FXSAVEQ=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_AVX512=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -mindirect-branch=thunk-extern -mindirect-branch-register -DRETPOLINE -Wframe-larger-than=2048 -fstack-protector-strong -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -g -pg -mfentry -DCC_USING_FENTRY -fno-inline-functions-called-once -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO -Wformat=2  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(pt1_drv.mod)"  -D"KBUILD_MODNAME=KBUILD_STR(pt1_drv)" -DMODULE  -c -o /root/home/chinachu/PT2_setting.file/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o /root/home/chinachu/PT2_setting.file/pt1-17b4f7b5dccb/driver/pt1_drv.mod.c
 
-source_/root/src/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o := /root/src/pt1-17b4f7b5dccb/driver/pt1_drv.mod.c
+source_/root/home/chinachu/PT2_setting.file/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o := /root/home/chinachu/PT2_setting.file/pt1-17b4f7b5dccb/driver/pt1_drv.mod.c
 
-deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o := \
+deps_/root/home/chinachu/PT2_setting.file/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o := \
     $(wildcard include/config/module/unload.h) \
+    $(wildcard include/config/mprofile/kernel.h) \
   include/linux/module.h \
     $(wildcard include/config/sysfs.h) \
     $(wildcard include/config/modules.h) \
     $(wildcard include/config/livepatch.h) \
     $(wildcard include/config/ftrace/mcount/record.h) \
-    $(wildcard include/config/s390.h) \
+    $(wildcard include/config/x86/64.h) \
+    $(wildcard include/config/ppc64.h) \
+    $(wildcard include/config/dynamic/ftrace.h) \
     $(wildcard include/config/unused/symbols.h) \
     $(wildcard include/config/module/sig.h) \
     $(wildcard include/config/generic/bug.h) \
@@ -43,6 +46,7 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o := \
     $(wildcard include/config/sparse/rcu/pointer.h) \
     $(wildcard include/config/trace/branch/profiling.h) \
     $(wildcard include/config/profile/all/branches.h) \
+    $(wildcard include/config/kasan.h) \
     $(wildcard include/config/enable/must/check.h) \
     $(wildcard include/config/enable/warn/deprecated.h) \
     $(wildcard include/config/kprobes.h) \
@@ -78,7 +82,6 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o := \
     $(wildcard include/config/have/underscore/symbol/prefix.h) \
     $(wildcard include/config/modversions.h) \
   arch/x86/include/asm/linkage.h \
-    $(wildcard include/config/x86/64.h) \
     $(wildcard include/config/x86/alignment/16.h) \
   include/linux/bitops.h \
   arch/x86/include/asm/bitops.h \
@@ -173,6 +176,7 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o := \
   arch/x86/include/asm/nops.h \
     $(wildcard include/config/mk7.h) \
     $(wildcard include/config/x86/p6/nop.h) \
+  include/asm-generic/barrier.h \
   include/asm-generic/bitops/find.h \
     $(wildcard include/config/generic/find/first/bit.h) \
   include/asm-generic/bitops/sched.h \
@@ -186,6 +190,7 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o := \
     $(wildcard include/config/matom.h) \
   arch/x86/include/asm/disabled-features.h \
     $(wildcard include/config/x86/intel/mpx.h) \
+    $(wildcard include/config/x86/intel/umip.h) \
   include/asm-generic/bitops/const_hweight.h \
   include/asm-generic/bitops/le.h \
   arch/x86/include/uapi/asm/byteorder.h \
@@ -209,11 +214,11 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o := \
   include/uapi/linux/kernel.h \
   include/uapi/linux/sysinfo.h \
   include/linux/seqlock.h \
+    $(wildcard include/config/debug/lock/alloc.h) \
   include/linux/spinlock.h \
     $(wildcard include/config/debug/spinlock.h) \
     $(wildcard include/config/generic/lockbreak.h) \
     $(wildcard include/config/preempt.h) \
-    $(wildcard include/config/debug/lock/alloc.h) \
     $(wildcard include/config/queued/rwlocks.h) \
   include/linux/preempt.h \
     $(wildcard include/config/debug/preempt.h) \
@@ -224,6 +229,8 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o := \
   include/linux/thread_info.h \
     $(wildcard include/config/compat.h) \
     $(wildcard include/config/debug/stack/usage.h) \
+    $(wildcard include/config/have/arch/within/stack/frames.h) \
+    $(wildcard include/config/hardened/usercopy.h) \
   include/linux/bug.h \
   arch/x86/include/asm/bug.h \
     $(wildcard include/config/bug.h) \
@@ -231,6 +238,7 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o := \
   include/asm-generic/bug.h \
     $(wildcard include/config/generic/bug/relative/pointers.h) \
   arch/x86/include/asm/thread_info.h \
+    $(wildcard include/config/frame/pointer.h) \
     $(wildcard include/config/ia32/emulation.h) \
   arch/x86/include/asm/page.h \
   arch/x86/include/asm/page_64.h \
@@ -260,6 +268,7 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o := \
     $(wildcard include/config/base/small.h) \
   include/linux/percpu-defs.h \
     $(wildcard include/config/debug/force/weak/per/cpu.h) \
+    $(wildcard include/config/virtualization.h) \
   arch/x86/include/asm/msr.h \
   arch/x86/include/asm/msr-index.h \
     $(wildcard include/config/control.h) \
@@ -292,7 +301,6 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o := \
   arch/x86/include/uapi/asm/msr.h \
   arch/x86/include/asm/paravirt.h \
   arch/x86/include/asm/frame.h \
-    $(wildcard include/config/frame/pointer.h) \
   arch/x86/include/asm/special_insns.h \
   include/linux/personality.h \
   include/uapi/linux/personality.h \
@@ -306,6 +314,10 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o := \
     $(wildcard include/config/irqsoff/tracer.h) \
     $(wildcard include/config/trace/irqflags/support.h) \
   arch/x86/include/asm/irqflags.h \
+  include/linux/static_key.h \
+  arch/x86/include/asm/nospec-branch.h \
+    $(wildcard include/config/retpoline.h) \
+  arch/x86/include/asm/alternative-asm.h \
   include/uapi/linux/magic.h \
   include/linux/atomic.h \
     $(wildcard include/config/arch/has/atomic/or.h) \
@@ -317,6 +329,7 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o := \
   include/asm-generic/atomic-long.h \
   include/linux/bottom_half.h \
   include/linux/preempt_mask.h \
+    $(wildcard include/config/s390.h) \
   include/linux/spinlock_types.h \
   include/linux/lockdep.h \
     $(wildcard include/config/lockdep.h) \
@@ -449,6 +462,7 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o := \
   include/linux/timer.h \
     $(wildcard include/config/timer/stats.h) \
     $(wildcard include/config/debug/objects/timers.h) \
+    $(wildcard include/config/no/hz/common.h) \
   include/linux/ktime.h \
     $(wildcard include/config/ktime/scalar.h) \
   include/linux/jiffies.h \
@@ -463,6 +477,10 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o := \
   arch/x86/include/asm/tsc.h \
     $(wildcard include/config/x86/tsc.h) \
   include/linux/timekeeping.h \
+  include/linux/sysctl.h \
+    $(wildcard include/config/sysctl.h) \
+  include/linux/rbtree.h \
+  include/uapi/linux/sysctl.h \
   arch/x86/include/asm/mmzone.h \
   arch/x86/include/asm/mmzone_64.h \
   arch/x86/include/asm/smp.h \
@@ -506,6 +524,7 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o := \
     $(wildcard include/config/acpi/sleep.h) \
   arch/x86/include/asm/io.h \
     $(wildcard include/config/mtrr.h) \
+    $(wildcard include/config/x86/pat.h) \
   include/asm-generic/iomap.h \
     $(wildcard include/config/has/ioport.h) \
     $(wildcard include/config/pci.h) \
@@ -515,7 +534,6 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o := \
     $(wildcard include/config/generic/pci/iomap.h) \
   include/linux/vmalloc.h \
     $(wildcard include/config/mmu.h) \
-  include/linux/rbtree.h \
   include/xen/xen.h \
     $(wildcard include/config/xen/dom0.h) \
   arch/x86/include/asm/pvclock.h \
@@ -543,9 +561,6 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o := \
   include/linux/percpu.h \
     $(wildcard include/config/need/per/cpu/embed/first/chunk.h) \
     $(wildcard include/config/need/per/cpu/page/first/chunk.h) \
-  include/linux/sysctl.h \
-    $(wildcard include/config/sysctl.h) \
-  include/uapi/linux/sysctl.h \
   include/linux/elf.h \
   arch/x86/include/asm/elf.h \
   arch/x86/include/asm/user.h \
@@ -564,9 +579,7 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o := \
   include/linux/moduleparam.h \
     $(wildcard include/config/alpha.h) \
     $(wildcard include/config/ia64.h) \
-    $(wildcard include/config/ppc64.h) \
   include/linux/tracepoint.h \
-  include/linux/static_key.h \
   arch/x86/include/asm/module.h \
     $(wildcard include/config/m586.h) \
     $(wildcard include/config/m586tsc.h) \
@@ -596,6 +609,6 @@ deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o := \
   include/linux/vermagic.h \
   include/generated/utsrelease.h \
 
-/root/src/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o: $(deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o)
+/root/home/chinachu/PT2_setting.file/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o: $(deps_/root/home/chinachu/PT2_setting.file/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o)
 
-$(deps_/root/src/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o):
+$(deps_/root/home/chinachu/PT2_setting.file/pt1-17b4f7b5dccb/driver/pt1_drv.mod.o):

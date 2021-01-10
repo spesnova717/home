@@ -1,0 +1,30 @@
+#!/bin/sh
+
+#%# family=auto
+#%# capabilities=autoconf
+
+GETNUM=`grep Upload /temporary/test.log | awk '{print $2}'`
+
+if [ "$1" = "autoconf" ]; then
+if [ -n ${GETNUM} ] ; then
+echo yes
+exit 0
+else
+echo no
+exit 0
+fi
+fi
+
+if [ "$1" = "config" ]; then
+echo 'graph_title network_upload'
+echo 'graph_args -r --lower-limit 0'
+echo 'graph_vlabel Mbps'
+echo 'graph_category sensors'
+echo 'total.label Upload'
+echo 'total.min 0'
+echo 'total.draw LINE1'
+echo 'total.type GAUGE'
+exit 0
+fi
+
+echo "total.value $GETNUM";
