@@ -74,6 +74,7 @@ __attribute__((section("__versions"))) = {
 	{ 0x7e5df8e3, __VMLINUX_SYMBOL_STR(__class_create) },
 	{ 0x7cf5b2b3, __VMLINUX_SYMBOL_STR(dev_get_drvdata) },
 	{ 0x584c5b17, __VMLINUX_SYMBOL_STR(dma_ops) },
+	{ 0x88db9f48, __VMLINUX_SYMBOL_STR(__check_object_size) },
 	{ 0x29537c9e, __VMLINUX_SYMBOL_STR(alloc_chrdev_region) },
 };
 
@@ -86,7 +87,10 @@ MODULE_ALIAS("pci:v000010EEd0000211Asv*sd*bc*sc*i*");
 MODULE_ALIAS("pci:v000010EEd0000222Asv*sd*bc*sc*i*");
 
 MODULE_INFO(srcversion, "E9450E3E593A437076E8D6D");
-MODULE_INFO(rhelversion, "7.5");
+MODULE_INFO(rhelversion, "7.9");
 #ifdef RETPOLINE
 	MODULE_INFO(retpoline, "Y");
+#endif
+#ifdef CONFIG_MPROFILE_KERNEL
+	MODULE_INFO(mprofile, "Y");
 #endif
